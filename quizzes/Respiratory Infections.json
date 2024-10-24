@@ -1,0 +1,96 @@
+{
+    "title": "Diagnosis and Management of Common Respiratory Infections",
+    "questions": [
+      {
+        "stem": "Which of the following is the most common cause of community-acquired pneumonia?",
+        "correct_answer": "Streptococcus pneumoniae",
+        "distractors": [
+          "Haemophilus influenzae",
+          "Mycoplasma pneumoniae",
+          "Staphylococcus aureus"
+        ]
+      },
+      {
+        "stem": "A 45-year-old patient presents with a productive cough, fever, and shortness of breath. What is the first-line antibiotic treatment for community-acquired pneumonia in a previously healthy adult?",
+        "correct_answer": "Amoxicillin",
+        "distractors": [
+          "Doxycycline",
+          "Azithromycin",
+          "Ciprofloxacin"
+        ]
+      },
+      {
+        "stem": "Which symptom is more suggestive of viral rather than bacterial acute bronchitis?",
+        "correct_answer": "Clear or white sputum",
+        "distractors": [
+          "High fever",
+          "Rust-colored sputum",
+          "Persistent night sweats"
+        ]
+      },
+      {
+        "stem": "What is the recommended first-line treatment for acute bacterial sinusitis?",
+        "correct_answer": "Amoxicillin-clavulanate",
+        "distractors": [
+          "Levofloxacin",
+          "Azithromycin",
+          "Doxycycline"
+        ]
+      },
+      {
+        "stem": "For patients with influenza who present within 48 hours of symptom onset, what is the recommended antiviral treatment?",
+        "correct_answer": "Oseltamivir",
+        "distractors": [
+          "Amantadine",
+          "Rimantadine",
+          "Baloxavir"
+        ]
+      },
+      {
+        "stem": "What is a common complication of untreated streptococcal pharyngitis?",
+        "correct_answer": "Rheumatic fever",
+        "distractors": [
+          "Pneumothorax",
+          "Bronchiectasis",
+          "Chronic sinusitis"
+        ]
+      },
+      {
+        "stem": "In a patient with a suspected pertussis infection, which diagnostic test is most appropriate?",
+        "correct_answer": "Polymerase chain reaction (PCR) for Bordetella pertussis",
+        "distractors": [
+          "Sputum culture",
+          "Chest X-ray",
+          "Rapid influenza diagnostic test"
+        ]
+      },
+      {
+        "stem": "Which of the following is a characteristic symptom of croup?",
+        "correct_answer": "Barking cough",
+        "distractors": [
+          "Purulent sputum",
+          "Pleuritic chest pain",
+          "Wheezing"
+        ]
+      },
+      {
+        "stem": "What is the recommended treatment for bronchiolitis in infants?",
+        "correct_answer": "Supportive care",
+        "distractors": [
+          "Amoxicillin",
+          "Nebulized corticosteroids",
+          "Oseltamivir"
+        ]
+      },
+      {
+        "stem": "When should antibiotics be considered for a patient with acute bronchitis?",
+        "correct_answer": "If there is evidence of a bacterial superinfection",
+        "distractors": [
+          "If symptoms last more than 3 days",
+          "For all cases to prevent complications",
+          "When the patient requests antibiotics"
+        ]
+      }
+    ]
+  }
+  
