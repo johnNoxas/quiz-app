@@ -1,0 +1,38 @@
+name: Generate index.json
+
+on:
+  push:
+    paths:
+      - 'quizzes/**'  # Trigger the workflow when files in the quizzes directory are modified
+  pull_request:
+    paths:
+      - 'quizzes/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install dependencies (if any)
+      run: npm install
+
+    - name: Generate index.json
+      run: node generate_index_json.js
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add quizzes/index.json
+        git commit -m 'Automatically update index.json'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
