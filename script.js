@@ -46,7 +46,7 @@ function submitQuiz() {
     const quizData = document.querySelectorAll(".question");
     quizData.forEach((question, index) => {
         const selectedOption = document.querySelector(`input[name="question-${index}"]:checked`);
-        if (selectedOption && selectedOption.value === quizData[index].dataset.correctAnswer) {
+        if (selectedOption && selectedOption.value === quizData[index].dataset.correct_answer) {
             score++;
         }
     });
