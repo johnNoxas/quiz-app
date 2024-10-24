@@ -23,7 +23,7 @@ jobs:
         node-version: '16'
 
     - name: Generate index.json
-      run: node generate_index_json.js
+      run: node generate_index.js
 
     - name: Commit and push changes
       run: |
