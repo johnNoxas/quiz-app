@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 id="quiz-title">Loading Quiz...</h1>
+        <div id="quiz-questions"></div>
+        <button class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+        <div class="result" id="quiz-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        async function loadQuiz() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const quizFile = urlParams.get('quiz');
+
+            if (!quizFile) {
+                document.getElementById("quiz-title").innerText = "Quiz not found!";
+                return;
+            }
+
+            try {
+                const response = await fetch(`quizzes/${quizFile}`);
+                const quizData = await response.json();
+                displayQuiz(quizData);
+            } catch (error) {
+                console.error("Error loading quiz:", error);
+                document.getElementById("quiz-title").innerText = "Failed to load quiz.";
+            }
+        }
+
+        loadQuiz();
+    </script>
+</body>
+</html>
