@@ -21,9 +21,6 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Install dependencies (if any)
-      run: npm install
-
     - name: Generate index.json
       run: node generate_index_json.js
 
