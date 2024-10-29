@@ -16,7 +16,7 @@ fs.readdir(quizzesDir, (err, files) => {
 
     // Write the list of quizzes to index.json
     fs.writeFileSync(
-        path.join(__dirname, 'index.json'),
+        path.join('index.json'),
         JSON.stringify(quizFiles, null, 2)  // Pretty print the JSON
     );
     console.log('index.json has been generated successfully.');
